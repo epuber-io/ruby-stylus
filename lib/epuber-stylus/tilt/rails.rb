@@ -1,4 +1,4 @@
-require 'stylus/tilt/stylus'
+require 'epuber-stylus/tilt/stylus'
 # Public: A Tilt template to compile Stylus stylesheets with asset helpers.
 module Stylus
   module Rails

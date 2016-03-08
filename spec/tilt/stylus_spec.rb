@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'stylus/tilt/stylus'
+require 'epuber-stylus/tilt/stylus'
 
 describe Tilt::StylusTemplate do
   it 'registers the template for .styl files' do
@@ -19,6 +19,6 @@ describe Tilt::StylusTemplate do
   it 'compiles with the compress option' do
     input, output = fixture(:compressed)
     template = Tilt::StylusTemplate.new(compress: true) { |_| input }
-    expect(template.render).to eq(output)
+    expect(template.render).to eq(output.rstrip)
   end
 end

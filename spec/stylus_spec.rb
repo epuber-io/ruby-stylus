@@ -14,13 +14,13 @@ describe Stylus do
 
   it 'compress the file when the "compress" flag is given' do
     input, output = fixture(:compressed)
-    expect(Stylus.compile(input, compress: true)).to eq(output)
+    expect(Stylus.compile(input, compress: true)).to eq(output.rstrip)
   end
 
   it 'handles the compress flag globally' do
     Stylus.compress = true
     input, output = fixture(:compressed)
-    expect(Stylus.compile(input)).to eq(output)
+    expect(Stylus.compile(input)).to eq(output.rstrip)
   end
 
   it 'imports the given paths' do

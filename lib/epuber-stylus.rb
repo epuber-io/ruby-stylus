@@ -1,7 +1,7 @@
-require 'stylus/runtime'
+require 'epuber-stylus/runtime'
 require 'stylus/source'
-require 'stylus/version'
-require 'stylus/railtie' if defined?(::Rails)
+require 'epuber-stylus/version'
+require 'epuber-stylus/railtie' if defined?(::Rails)
 ## Stylus
 #
 # `stylus` is a bridge between your Ruby code and the [Stylus](https://github.com/LearnBoost/stylus)

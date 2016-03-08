@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'rails/generators/stylus/assets/assets_generator'
+require 'rails/generators/epuber-stylus/assets/assets_generator'
 
 describe Stylus::Generators::AssetsGenerator do
   include Generators::TestCase

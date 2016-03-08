@@ -37,7 +37,7 @@ describe 'Rails integration' do
     result = fixture(:compressed).last
 
     app = create_app(:compress => true)
-    app.assets['compressed'].to_s.should == result
+    app.assets['compressed'].to_s.should == result.rstrip
   end
 
   it 'loads the app normally even when the asset pipeline is disabled' do

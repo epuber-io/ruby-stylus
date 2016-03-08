@@ -1,6 +1,6 @@
 require 'spec_helper'
 require 'rails/generators/rails/controller/controller_generator'
-require 'rails/generators/stylus/assets/assets_generator'
+require 'rails/generators/epuber-stylus/assets/assets_generator'
 
 describe Rails::Generators::ControllerGenerator do
   include Generators::TestCase

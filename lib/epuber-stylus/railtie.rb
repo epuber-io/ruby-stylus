@@ -1,5 +1,5 @@
-require 'stylus'
-require 'stylus/sprockets'
+require 'epuber-stylus'
+require 'epuber-stylus/sprockets'
 
 module Stylus
   # Internal: The Railtie responsible for integrate the Stylus library with

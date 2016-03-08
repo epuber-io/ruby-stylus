@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'rails/generators/rails/scaffold/scaffold_generator'
-require 'rails/generators/stylus/assets/assets_generator'
-require 'rails/generators/stylus/scaffold/scaffold_generator'
+require 'rails/generators/epuber-stylus/assets/assets_generator'
+require 'rails/generators/epuber-stylus/scaffold/scaffold_generator'
 
 describe Rails::Generators::ScaffoldGenerator do
   include Generators::TestCase

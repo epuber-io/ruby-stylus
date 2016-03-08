@@ -1,7 +1,7 @@
-require 'stylus'
-require 'stylus/tilt/stylus'
-require 'stylus/tilt/rails'
-require 'stylus/import_processor'
+require 'epuber-stylus'
+require 'epuber-stylus/tilt/stylus'
+require 'epuber-stylus/tilt/rails'
+require 'epuber-stylus/import_processor'
 # Public: The setup logic to configure both Stylus and Sprockets on any
 # kind of application - Rails, Sinatra or Rack.
 #
