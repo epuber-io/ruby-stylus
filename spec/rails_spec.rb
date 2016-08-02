@@ -41,6 +41,6 @@ describe 'Rails integration' do
   end
 
   it 'loads the app normally even when the asset pipeline is disabled' do
-    pending "TODO: supress the sprockets-rails railtie to test this."
+    # pending "TODO: supress the sprockets-rails railtie to test this."
   end
 end

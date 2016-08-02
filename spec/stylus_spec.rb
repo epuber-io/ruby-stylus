@@ -53,7 +53,7 @@ describe Stylus do
 
   it 'stores the given plugins' do
     Stylus.use :one, :two, argument: true
-    expect(Stylus).to have(2).plugins
+    expect(Stylus.plugins.count).to eq 2
   end
 
   it 'includes the given plugins' do
@@ -64,7 +64,7 @@ describe Stylus do
 
   it 'stores the define calls' do
     Stylus.define "mystring", "test"
-    expect(Stylus).to have(1).definitions
+    expect(Stylus.definitions.count).to eq 1
   end
 
   it 'defines a global variable string' do
