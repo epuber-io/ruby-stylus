@@ -30,7 +30,7 @@ describe 'Sprockets setup' do
 
   it 'configure the debug and compress flags' do
     Stylus.setup(env, debug: true, compress: true)
-    expect(Stylus.debug).to be_truthy
-    expect(Stylus.compress).to be_truthy
+    expect(Stylus.debug).to eq true
+    expect(Stylus.compress).to eq true
   end
 end
