@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/lucasmazza/ruby-stylus"
   s.summary     = %q{Ruby Stylus Compiler}
   s.description = %q{Bridge library to compile .styl stylesheets from ruby code.}
+  s.required_ruby_version = '>= 2.0'
 
   s.add_dependency 'execjs'
   s.add_dependency 'stylus-source'
