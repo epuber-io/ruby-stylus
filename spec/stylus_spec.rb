@@ -79,6 +79,26 @@ describe Stylus do
     expect(Stylus.compile(input)).to match(/content: red/)
   end
 
+  it 'defines a global object/hash variable' do
+    Stylus.define "myobject", {value: 'mystring'}
+    input, output = fixture(:definition_object)
+    compiled = Stylus.compile(input)
+    expect(compiled).to match(/content: 'mystring'/)
+    expect(compiled).to match(/content2: 'mystring'/)
+  end
+
+  it 'defines a global object/hash variable with conditions support' do
+    Stylus.define "myobject", {value: 'mystring'}
+    input, output = fixture(:definition_object)
+    expect(Stylus.compile(input)).to match(/content3: 'if_true'/)
+  end
+
+  it 'defines a global object/hash variable with conditions support (negative case)' do
+    Stylus.define "myobject", {value2: 'mystring'}
+    input, output = fixture(:definition_object)
+    expect(Stylus.compile(input)).to match(/content3: 'if_false'/)
+  end
+
   it 'includes and imports "nib" automatically' do
     Stylus.nib = true
     input, output = fixture(:nib)
