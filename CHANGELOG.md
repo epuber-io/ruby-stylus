@@ -1,3 +1,8 @@
+### 1.1.1
+
+* Add support for `Stylus.define` with Hash value. Symbols are automatically converted into strings, so you can use them
+for keys in hash.
+
 ### 1.1.0
 
 * Add support for `Stylus.define` which lets you define custom variables into template.
