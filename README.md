@@ -1,8 +1,8 @@
 # Ruby Stylus
 
-[![Gem Version](https://badge.fury.io/rb/stylus.svg)](http://badge.fury.io/rb/stylus)
-[![Build Status](https://travis-ci.org/forgecrafted/ruby-stylus.svg?branch=master)](https://travis-ci.org/forgecrafted/ruby-stylus)
-[![Coverage Status](https://coveralls.io/repos/forgecrafted/ruby-stylus/badge.svg)](https://coveralls.io/r/forgecrafted/ruby-stylus)
+[![Gem Version](https://badge.fury.io/rb/epuber-stylus.svg)](http://badge.fury.io/rb/epuber-stylus)
+[![Build Status](https://travis-ci.org/epuber-io/ruby-stylus.svg?branch=master)](https://travis-ci.org/epuber-io/ruby-stylus)
+[![Coverage Status](https://coveralls.io/repos/epuber-io/ruby-stylus/badge.svg)](https://coveralls.io/r/epuber-io/ruby-stylus)
 
 `stylus` is a bridge between Ruby and the [Stylus](https://github.com/stylus/stylus) library that runs on [node.js](http://nodejs.org). It has support for Rails 4 applications. (if you are working with Rails 3, check the [0-7-stable](https://github.com/forgecrafted/ruby-stylus/tree/0-7-stable) branch.)
 
@@ -11,13 +11,13 @@
 If you have a `Gemfile`:
 
 ```
-gem 'stylus'
+gem 'epuber-stylus'
 ```
 
 or install it on your system:
 
 ```
-gem install stylus
+gem install epuber-stylus
 ```
 
 The [ruby-stylus-source](https://github.com/forgecrafted/ruby-stylus-source) packages the Stylus source into a gem, and is installed as a dependency of this gem.  Versions of `ruby-stylus-source` follow Stylus releases and their versions.
@@ -31,7 +31,7 @@ You can manually replace the Stylus code by placing another version of Stylus on
 The interaction is done by the `Stylus` module. You can compile Stylus syntax to CSS, convert it back, enable plugins and tweak some other options:
 
 ```ruby
-require 'stylus'
+require 'epuber-stylus'
 
 # Accepts a raw string or an IO object (File, StringIO or anything that responds to 'read').
 Stylus.compile(File.new('application.styl')) # returns the compiled stylesheet.
@@ -137,7 +137,7 @@ stylus(file).use(fingerprint({literal:'caa8c262e23268d2a7062c6217202343b84f472b'
 
 ## Questions, Bugs or Support
 
-[Drop us a line in the issues section](https://github.com/forgecrafted/ruby-stylus/issues).
+[Drop us a line in the issues section](https://github.com/epuber-io/ruby-stylus/issues).
 
 **Be sure to include sample code that reproduces the problem.**
 
@@ -145,7 +145,7 @@ For more info about Stylus syntax and its features, you can check the [project r
 
 ## Changelog
 
-[Available here.](https://github.com/forgecrafted/ruby-stylus/blob/master/CHANGELOG.md)
+[Available here.](https://github.com/epuber-io/ruby-stylus/blob/master/CHANGELOG.md)
 
 ## License
 
