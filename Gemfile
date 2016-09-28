@@ -6,3 +6,8 @@ gemspec
 gem 'rspec',           '~> 2.14.0'
 gem 'sprockets-rails', '~> 2.0.0'
 gem 'railties',        '~> 4.0.0'
+
+
+if RUBY_VERSION <= '2.0'
+  gem 'json', '~> 1.8'
+end
