@@ -1,3 +1,7 @@
+### 1.1.0
+
+* Add support for `Stylus.define` which lets you define custom variables into template.
+
 ### 1.0.1
 
 * Prevent exceptions from files without extensions.
