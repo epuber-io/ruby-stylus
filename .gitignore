@@ -7,3 +7,6 @@ docs
 log/
 .vagrant/
 coverage
+.idea
+vendor/gems
+Gemfile.lock

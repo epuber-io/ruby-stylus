@@ -7,12 +7,11 @@ Gem::Specification.new do |s|
   s.version     = Stylus::VERSION
   s.platform    = Gem::Platform::RUBY
   s.licenses    = ["MIT"]
-  s.authors     = ["Lucas Mazza"]
-  s.email       = ["luc4smazza@gmail.com"]
-  s.homepage    = "https://github.com/lucasmazza/ruby-stylus"
+  s.authors     = ["Roman Kříž"]
+  s.email       = ["roman@kriz.io"]
+  s.homepage    = "https://github.com/epuber-io/ruby-stylus"
   s.summary     = %q{Ruby Stylus Compiler}
   s.description = %q{Bridge library to compile .styl stylesheets from ruby code.}
-  s.required_ruby_version = '>= 2.0'
 
   s.add_dependency 'execjs'
   s.add_dependency 'stylus-source'
