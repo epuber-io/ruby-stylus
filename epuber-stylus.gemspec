@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = %q{Bridge library to compile .styl stylesheets from ruby code.}
 
   s.add_dependency 'execjs'
-  s.add_dependency 'stylus-source'
+  s.add_dependency 'epuber-stylus-source'
 
   s.add_development_dependency 'coveralls', '>= 0.8.0'
 
